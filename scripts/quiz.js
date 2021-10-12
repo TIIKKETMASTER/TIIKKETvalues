@@ -1,7 +1,7 @@
-var max_radi, max_coop, max_ownr, max_glob, max_prog, max_rebl, max_mark // Max possible scores
-max_radi = max_coop = max_ownr = max_glob = max_prog = max_rebl = max_mark = 0;
-var radi, coop, ownr, glob, prog, rebl, mark // User's scores
-radi = coop = ownr = glob = prog = rebl = mark = 0;
+var max_radi, max_econ, max_stte, max_natn, max_conv // Max possible scores
+max_radi = max_econ = max_stte = max_natn = max_conv = 0;
+var radi, econ, stte, natn, conv // User's scores
+radi = econ = stte = natn = conv = 0;
 var qn = 0; // Question number
 var prev_answer = null;
 fetch("JSON/questions.json")
@@ -12,12 +12,10 @@ function load_questions(data) {
     questions = data
     for (var i = 0; i < questions.length; i++) {
         max_radi += Math.abs(questions[i].effect.radi)
-        max_coop += Math.abs(questions[i].effect.coop)
-        max_ownr += Math.abs(questions[i].effect.ownr)
-        max_glob += Math.abs(questions[i].effect.glob)
-        max_prog += Math.abs(questions[i].effect.prog)
-        max_rebl += Math.abs(questions[i].effect.rebl)
-        max_mark += Math.abs(questions[i].effect.mark)
+        max_econ += Math.abs(questions[i].effect.econ)
+        max_stte += Math.abs(questions[i].effect.stte)
+        max_natn += Math.abs(questions[i].effect.natn)
+        max_conv += Math.abs(questions[i].effect.conv)
     }
     init_question();
 }
@@ -37,12 +35,10 @@ function init_question() {
 
 function next_question(mult) {
     radi += mult*questions[qn].effect.radi
-    coop += mult*questions[qn].effect.coop
-    ownr += mult*questions[qn].effect.ownr
-    glob += mult*questions[qn].effect.glob
-    prog += mult*questions[qn].effect.prog
-    rebl += mult*questions[qn].effect.rebl
-    mark += mult*questions[qn].effect.mark
+    econ += mult*questions[qn].effect.econ
+    stte += mult*questions[qn].effect.stte
+    natn += mult*questions[qn].effect.natn
+    conv += mult*questions[qn].effect.conv
     qn++;
     prev_answer = mult;
     if (qn < questions.length) {
@@ -57,12 +53,10 @@ function prev_question() {
     }
     qn--;
     radi -= prev_answer * questions[qn].effect.radi;
-    coop -= prev_answer * questions[qn].effect.coop;
-    ownr -= prev_answer * questions[qn].effect.ownr;
-    glob -= prev_answer * questions[qn].effect.glob;
-    prog -= prev_answer * questions[qn].effect.prog;
-    rebl -= prev_answer * questions[qn].effect.rebl;
-    mark -= prev_answer * questions[qn].effect.mark;
+    econ -= prev_answer * questions[qn].effect.econ;
+    stte -= prev_answer * questions[qn].effect.stte;
+    natn -= prev_answer * questions[qn].effect.natn;
+    conv -= prev_answer * questions[qn].effect.conv;
     prev_answer = null;
     init_question();
 
@@ -73,10 +67,8 @@ function calc_score(score,max) {
 function results() {
     location.href = `results.html`
         + `?r=${calc_score(radi,max_radi)}`
-        + `&c=${calc_score(coop,max_coop)}`
-        + `&o=${calc_score(ownr,max_ownr)}`
-        + `&g=${calc_score(glob,max_glob)}`
-        + `&p=${calc_score(prog,max_prog)}`
-        + `&l=${calc_score(rebl,max_rebl)}`
-        + `&m=${calc_score(mark,max_mark)}`
+        + `&e=${calc_score(econ,max_econ)}`
+        + `&s=${calc_score(stte,max_stte)}`
+        + `&n=${calc_score(natn,max_natn)}`
+        + `&c=${calc_score(conv,max_conv)}`
 }

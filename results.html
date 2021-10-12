@@ -5,21 +5,21 @@
         <link href='style.css' rel='stylesheet' type='text/css'>
         <link rel="icon" type="x-icon" href="assets/icon.png">
         <link rel="shortcut icon" type="x-icon" href="assets/icon.png">
-        <title>LiberationValues</title>
+        <title>ConservaValues</title>
         <meta property="og:ttl" content="600">
-        <meta property="og:site_name" content="LiberationValues.github.io">
-        <meta property="og:title" content="LiberationValues">
+        <meta property="og:site_name" content="ConservaValues.github.io">
+        <meta property="og:title" content="ConservaValues">
         <meta property="og:type" content="website">
-        <meta property="og:description" content="LibertationValues is a political quiz aimed at anti-authoritarian leftists">
-        <meta property="og:url" content="https://liberationvalues.github.io/">
-        <meta property="og:image" content="https://liberationvalues.github.io/assets/previcon.png">
+        <meta property="og:description" content="ConservaValues is a political quiz aimed at cultural conservatives">
+        <meta property="og:url" content="https://conservavalues.github.io/">
+        <meta property="og:image" content="https://conservavalues.github.io/assets/previcon.png">
         <meta property="og:image:width" content="1024">
         <meta property="og:image:height" content="1024">
         <meta name="theme-color" content="#000000" data-react-helmet="true">
         <meta charset="utf-8">
     </head>
     <body>
-        <h1>LiberationValues</h1>
+        <h1>ConservaValues</h1>
         <hr>
         <h1>Results</h1>
         <h2>Radicality Axis: <span class="weight-300" id="radicality-label"></span></h2>
@@ -29,51 +29,37 @@
             <div class="bar radical" id="bar-radical"><div class="text-wrapper" id="radical"></div></div>
             <img id="img-radical" src="assets/values/radical.svg" height="128pt"/>
         </div>
-        <h2>Co-operation Axis: <span class="weight-300" id="co-operation-label"></span></h2>
+        <h2>Economics Axis: <span class="weight-300" id="economics-label"></span></h2>
         <div class="axis">
-            <img id="img-leftunity" src="assets/values/leftunity.svg" height="128pt"/>
-            <div class="bar leftunity" id="bar-leftunity"><div class="text-wrapper" id="leftunity"></div></div>
-            <div class="bar libunity" id="bar-libunity"><div class="text-wrapper" id="libunity"></div></div>
-            <img id="img-libunity" src="assets/values/libunity.svg" height="128pt"/>
+            <img id="img-socialist" src="assets/values/socialist.svg" height="128pt"/>
+            <div class="bar socialist" id="bar-socialist"><div class="text-wrapper" id="socialist"></div></div>
+            <div class="bar capitalist" id="bar-capitalist"><div class="text-wrapper" id="capitalist"></div></div>
+            <img id="img-capitalist" src="assets/values/capitalist.svg" height="128pt"/>
         </div>
-        <h2>Ownership Axis: <span class="weight-300" id="ownership-label"></span></h2>
+        <h2>Civics Axis: <span class="weight-300" id="statism-label"></span></h2>
         <div class="axis">
-            <img id="img-centralized" src="assets/values/centralized.svg" height="128pt"/>
-            <div class="bar centralized" id="bar-centralized"><div class="text-wrapper" id="centralized"></div></div>
-            <div class="bar decentralized" id="bar-decentralized"><div class="text-wrapper" id="decentralized"></div></div>
-            <img id="img-decentralized" src="assets/values/decentralized.svg" height="128pt"/>
+            <img id="img-authoritarian" src="assets/values/authoritarian.svg" height="128pt"/>
+            <div class="bar authoritarian" id="bar-authoritarian"><div class="text-wrapper" id="authoritarian"></div></div>
+            <div class="bar libertarian" id="bar-libertarian"><div class="text-wrapper" id="libertarian"></div></div>
+            <img id="img-libertarian" src="assets/values/libertarian.svg" height="128pt"/>
         </div>
-        <h2>World Axis: <span class="weight-300" id="world-label"></span></h2>
+        <h2>Nation Axis: <span class="weight-300" id="nation-label"></span></h2>
         <div class="axis">
-            <img id="img-localist" src="assets/values/localist.svg" height="128pt"/>
-            <div class="bar localist" id="bar-localist"><div class="text-wrapper" id="localist"></div></div>
+            <img id="img-nationalist" src="assets/values/nationalist.svg" height="128pt"/>
+            <div class="bar nationalist" id="bar-nationalist"><div class="text-wrapper" id="nationalist"></div></div>
             <div class="bar globalist" id="bar-globalist"><div class="text-wrapper" id="globalist"></div></div>
             <img id="img-globalist" src="assets/values/globalist.svg" height="128pt"/>
         </div>
-        <h2>Culture Axis: <span class="weight-300" id="culture-label"></span></h2>
+        <h2>Conventionalism Axis: <span class="weight-300" id="conventionalism-label"></span></h2>
         <div class="axis">
-            <img id="img-traditionalist" src="assets/values/traditionalist.svg" height="128pt"/>
-            <div class="bar traditionalist" id="bar-traditionalist"><div class="text-wrapper" id="traditionalist"></div></div>
-            <div class="bar progressive" id="bar-progressive"><div class="text-wrapper" id="progressive"></div></div>
-            <img id="img-progressive" src="assets/values/progressive.svg" height="128pt"/>
-        </div>
-        <h2>Rebelliousness Axis: <span class="weight-300" id="rebelliousness-label"></span></h2>
-        <div class="axis">
-            <img id="img-reform" src="assets/values/reform.svg" height="128pt"/>
-            <div class="bar reform" id="bar-reform"><div class="text-wrapper" id="reform"></div></div>
-            <div class="bar revolution" id="bar-revolution"><div class="text-wrapper" id="revolution"></div></div>
-            <img id="img-revolution" src="assets/values/revolution.svg" height="128pt"/>
-        </div>
-        <h2>Markets Axis: <span class="weight-300" id="markets-label"></span></h2>
-        <div class="axis">
-            <img id="img-markets" src="assets/values/markets.svg" height="128pt"/>
-            <div class="bar markets" id="bar-markets"><div class="text-wrapper" id="markets"></div></div>
-            <div class="bar planning" id="bar-planning"><div class="text-wrapper" id="planning"></div></div>
-            <img id="img-planning" src="assets/values/planning.svg" height="128pt"/>
+            <img id="img-conventionalist" src="assets/values/conventionalist.svg" height="128pt"/>
+            <div class="bar conventionalist" id="bar-conventionalist"><div class="text-wrapper" id="conventionalist"></div></div>
+            <div class="bar conspiratorialist" id="bar-conspiratorialist"><div class="text-wrapper" id="conspiratorialist"></div></div>
+            <img id="img-conspiratorialist" src="assets/values/conspiratorialist.svg" height="128pt"/>
         </div>
         <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
         <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
-        <p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to TheGhostOfInky#9229 on Discord or any other comments, questions, or criticism. </p>
+        <p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to afunhumaninter#9121 on Discord (or u/afunhumaninter on Reddit) or any other comments, questions, or criticism. </p>
         <hr/>
         <img src="" id="banner">
         <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>

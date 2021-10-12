@@ -1,2 +1,2 @@
-# Liberationvalues
-LiberationValues is a political quiz aimed at anti-authoritarian lefitsts that attempts to assign percentages for fourteen different political values. 
+# Conservavalues
+ConservaValues is a political quiz aimed at conservatives and cultural rightists that attempts to assign percentages for ten different political values. 

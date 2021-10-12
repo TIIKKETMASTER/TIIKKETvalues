@@ -38,62 +38,48 @@ fetch("JSON/ideologies.json")
 
 function parse_ideology(ideologies){
     var moderate       = getQueryVariable("r")
-    var leftunity      = getQueryVariable("c")
-    var centralized    = getQueryVariable("o")
-    var localist       = getQueryVariable("g")
-    var traditionalist = getQueryVariable("p")
-    var reform         = getQueryVariable("l")
-    var markets        = getQueryVariable("m")
+    var socialist      = getQueryVariable("e")
+    var authoritarian    = getQueryVariable("s")
+    var nationalist       = getQueryVariable("n")
+    var conventionalist = getQueryVariable("c")
     var radical        = (100 - moderate       ).toFixed(1)
-    var libunity       = (100 - leftunity      ).toFixed(1)
-    var decentralized  = (100 - centralized    ).toFixed(1)
-    var globalist      = (100 - localist       ).toFixed(1)
-    var progressive    = (100 - traditionalist ).toFixed(1)
-    var revolution     = (100 - reform         ).toFixed(1)
-    var planning       = (100 - markets        ).toFixed(1)
+    var capitalist       = (100 - socialist      ).toFixed(1)
+    var libertarian  = (100 - authoritarian    ).toFixed(1)
+    var globalist      = (100 - nationalist       ).toFixed(1)
+    var conspiratorialist    = (100 - conventionalist ).toFixed(1)
     
     setBarValue("moderate", moderate)
     setBarValue("radical", radical)
-    setBarValue("leftunity", leftunity)
-    setBarValue("libunity", libunity)
-    setBarValue("centralized", centralized)
-    setBarValue("decentralized", decentralized)
-    setBarValue("localist", localist)
+    setBarValue("socialist", socialist)
+    setBarValue("capitalist", capitalist)
+    setBarValue("authoritarian", authoritarian)
+    setBarValue("libertarian", libertarian)
+    setBarValue("nationalist", nationalist)
     setBarValue("globalist", globalist)
-    setBarValue("traditionalist", traditionalist)
-    setBarValue("progressive", progressive)
-    setBarValue("reform", reform)
-    setBarValue("revolution", revolution)
-    setBarValue("markets", markets)
-    setBarValue("planning", planning)
+    setBarValue("conventionalist", conventionalist)
+    setBarValue("conspiratorialist", conspiratorialist)
 
-    const radiArray = ["Social Liberal","Social Democrat","Labourism","Liberal Socialism","Democratic Socialism","Libertarian Socialism","Anarchism"]
-    const coopArray = ["Left Synthesis","Left Unity","Left Co-Operation","Generalist","Libertarian Co-operation","Libertarian Unity","Libertarian Synthesis"]
-    const ownrArray = ["Extremely Centralized","Centralized","More Central","Balanced","More Decentral","Decentralized","Extremely Decentralized"]
-    const globArray = ["Isolationist","Nationalist","Internalist","Balanced","Internationalist","Interventionalist","Globalist"]
-    const progArray = ["Traditionalist","Very Conservative","Conservative","Balanced","Progressive","Very Progressive","Liberationist"]
-    const reblArray = ["Extreme Revolutionary","Revolutionary","Striker","Centrist","Pacifist","Reformism","Constitutionalism"]
-    const markArray = ["Very Free Market","Free Marketism","Slightly Unregualted","Regulatory","Nationalized","Planning","Full Planning"]
+    const radiArray = ["Center-Conservative","Rockefeller Conservative","Liberal Conservative","Conservative","High Conservative","Traditionalist","Reactionary"]
+    const econArray = ["Communist","Socialist","Social Democracy","Centrist","Economic Liberalism","Capitalism","Proprietarianism"]
+    const stteArray = ["Totalitarian","Authoritarian","Statism","Balanced","Civically Liberal","Libertarian","Anarchist"]
+    const natnArray = ["Chauvinist","Nationalist","Patriot","Neutral","Diplomatic","Internationalist","One-World Globalist"]
+    const convArray = ["Strongly Conventionalist","Conventionalist","Mainstream","Somewhat Mainstream","Distrustful","Conspiratorialist","Strongly Conspiratorialist"]
 
     document.getElementById("radicality-label").innerHTML = setLabel(moderate, radiArray)
-    document.getElementById("co-operation-label").innerHTML = setLabel(leftunity, coopArray)
-    document.getElementById("ownership-label").innerHTML = setLabel(centralized, ownrArray)
-    document.getElementById("world-label").innerHTML = setLabel(localist, globArray)
-    document.getElementById("culture-label").innerHTML = setLabel(traditionalist, progArray)
-    document.getElementById("rebelliousness-label").innerHTML = setLabel(revolution, reblArray)
-    document.getElementById("markets-label").innerHTML = setLabel(markets, markArray)
+    document.getElementById("economics-label").innerHTML = setLabel(socialist, econArray)
+    document.getElementById("statism-label").innerHTML = setLabel(authoritarian, stteArray)
+    document.getElementById("nation-label").innerHTML = setLabel(nationalist, natnArray)
+    document.getElementById("conventionalism-label").innerHTML = setLabel(conventionalist, convArray)
 
     var ideology = ""
     var ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         var dist = 0
         dist += Math.pow(Math.abs(ideologies[i].stats.radi - moderate), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.coop - leftunity), 1.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.ownr - centralized), 1.75)
-        dist += Math.pow(Math.abs(ideologies[i].stats.glob - localist), 1.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.prog - traditionalist), 1.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.rebl - reform), 1.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.mark - markets), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.econ - socialist), 1.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.stte - authoritarian), 1.75)
+        dist += Math.pow(Math.abs(ideologies[i].stats.natn - nationalist), 1.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.conv - conventionalist), 1.5)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -101,5 +87,5 @@ function parse_ideology(ideologies){
     }
     document.getElementById("ideology-label").innerHTML = ideology
 
-    drawCanvas(ideology, moderate, radical, leftunity, libunity, centralized, decentralized, localist, globalist, traditionalist, progressive, reform, revolution, markets, planning) 
+    drawCanvas(ideology, moderate, radical, socialist, capitalist, authoritarian, libertarian, nationalist, globalist, conventionalist, conspiratorialist) 
 } 
