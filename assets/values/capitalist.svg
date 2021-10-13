@@ -59,7 +59,7 @@
      inkscape:cx="117.23083"
      inkscape:cy="134.75919"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="text5972"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -190,17 +190,15 @@
          x="-236.43752"
          y="115.60827"
          style="stroke:#222222;stroke-width:0.264583;stroke-opacity:1" /></text>
-    <text
-       xml:space="preserve"
-       style="font-weight:bold;font-size:34.5856px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:#222222;fill-opacity:1;stroke-width:2.47039"
-       x="-229.15779"
-       y="132.27487"
+    <g
+       aria-label="$"
+       transform="scale(1.0402363,0.96131999)"
        id="text5972"
-       transform="scale(1.0402363,0.96131999)"><tspan
-         sodipodi:role="line"
-         id="tspan5970"
-         x="-229.15779"
-         y="132.27487"
-         style="fill:#222222;fill-opacity:1;stroke-width:2.47039">$</tspan></text>
+       style="font-weight:bold;font-size:34.5856px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:#222222;fill-opacity:1;stroke-width:2.47039">
+      <path
+         d="m -208.06057,125.18482 q 0,2.83602 -2.07514,4.87657 -2.07514,2.00597 -5.98331,2.49017 v 3.87358 h -3.45856 v -3.76983 q -2.55933,-0.13834 -4.87657,-0.89922 -2.31723,-0.76089 -3.73524,-1.86762 l 1.9022,-4.21945 q 1.31426,0.9684 3.07812,1.62553 1.76387,0.65712 3.63149,0.83005 v -5.7758 q -2.45558,-0.58795 -4.15027,-1.31425 -1.6947,-0.7263 -2.83602,-2.10972 -1.14133,-1.41801 -1.14133,-3.73525 0,-2.8706 2.07514,-4.91115 2.10972,-2.07514 6.05248,-2.52475 v -3.839 h 3.45856 v 3.76983 q 4.25403,0.34585 7.02088,2.10972 l -1.72928,4.25403 q -2.59392,-1.48718 -5.2916,-1.79845 v 5.87955 q 2.42099,0.55337 4.0811,1.27967 1.6947,0.69171 2.83602,2.10972 1.14133,1.38342 1.14133,3.66607 z m -14.07634,-10.27192 q 0,0.86464 0.65712,1.41801 0.65713,0.55337 1.90221,0.93381 v -4.91115 q -1.31425,0.31127 -1.93679,1.00298 -0.62254,0.65712 -0.62254,1.55635 z m 6.01789,13.07336 q 1.24508,-0.27669 1.86762,-0.89923 0.62254,-0.62254 0.62254,-1.48718 0,-0.86464 -0.65712,-1.41801 -0.62254,-0.55337 -1.83304,-0.9684 z"
+         style="fill:#222222;fill-opacity:1;stroke-width:2.47039"
+         id="path40" />
+    </g>
   </g>
 </svg>
