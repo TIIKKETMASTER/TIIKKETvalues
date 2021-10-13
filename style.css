@@ -401,6 +401,10 @@ span.weight-300 {
     font-weight: 300;
 }
 
+#conventionalism-name{
+    font-size: 8pt;
+}
+
 /*Dark mode*/
 @media(prefers-color-scheme: dark){
     :root {
