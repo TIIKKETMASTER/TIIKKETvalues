@@ -1210,16 +1210,6 @@
         }
     },
     {
-        "question": "I support taxing harmful addictive substances very significantly more than normal items.",
-        "effect": {
-            "radi": -5,
-            "econ": 5,
-            "stte": 5,
-            "natn": 0,
-            "conv": 0
-        }
-    },
-    {
         "question": "If they are conservative, tough laws and a strict court system would be good for society.",
         "effect": {
             "radi": 0,
