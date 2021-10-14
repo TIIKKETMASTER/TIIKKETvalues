@@ -479,5 +479,45 @@
             "natn": 80,
             "conv": 85
         }        
+    },
+    {
+        "name": "Distributism",
+        "stats": {
+            "radi": 30,
+            "econ": 55,
+            "stte": 50,
+            "natn": 50,
+            "conv": 85
+        }        
+    },
+    {
+        "name": "Anarcho-Distributism",
+        "stats": {
+            "radi": 30,
+            "econ": 55,
+            "stte": 5,
+            "natn": 50,
+            "conv": 85
+        }        
+    },
+    {
+        "name": "Libertarian Distributism",
+        "stats": {
+            "radi": 30,
+            "econ": 45,
+            "stte": 30,
+            "natn": 50,
+            "conv": 85
+        }        
+    },
+    {
+        "name": "Christian Democracy",
+        "stats": {
+            "radi": 65,
+            "econ": 50,
+            "stte": 55,
+            "natn": 55,
+            "conv": 85
+        }        
     }
 ]
