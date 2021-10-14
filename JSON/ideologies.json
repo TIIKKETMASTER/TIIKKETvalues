@@ -33,7 +33,7 @@
     {
         "name": "Trumpism",
         "stats": {
-            "radi": 30,
+            "radi": 35,
             "econ": 35,
             "stte": 70,
             "natn": 75,
@@ -133,8 +133,8 @@
     {
         "name": "Fascism",
         "stats": {
-            "radi": 10,
-            "econ": 60,
+            "radi": 15,
+            "econ": 55,
             "stte": 90,
             "natn": 95,
             "conv": 85
