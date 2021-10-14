@@ -59,11 +59,11 @@ function parse_ideology(ideologies){
     setBarValue("conventionalist", conventionalist)
     setBarValue("conspiratorialist", conspiratorialist)
 
-    const radiArray = ["Center-Conservative","Rockefeller Conservative","Liberal Conservative","Conservative","High Conservative","Traditionalist","Reactionary"]
+    const radiArray = ["Center-Conservative","Moderate Conservative","Liberal Conservative","Conservative","High Conservative","Traditionalist","Reactionary"]
     const econArray = ["Communist","Socialist","Social Democracy","Centrist","Economic Liberalism","Capitalism","Proprietarianism"]
     const stteArray = ["Totalitarian","Authoritarian","Statism","Balanced","Civically Liberal","Libertarian","Anarchist"]
     const natnArray = ["Chauvinist","Nationalist","Patriot","Neutral","Diplomatic","Internationalist","One-World Globalist"]
-    const convArray = ["Strongly Conventionalist","Conventionalist","Mainstream","Distrustful","Unconventional","Conspiratorialist","Strongly Conspiratorialist"]
+    const convArray = ["Establishment-Aligned","Conventionalist","Mainstream","Distrustful","Unconventional","Conspiratorialist","Idiosyncratic"]
 
     document.getElementById("radicality-label").innerHTML = setLabel(moderate, radiArray)
     document.getElementById("economics-label").innerHTML = setLabel(socialist, econArray)
