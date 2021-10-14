@@ -83,7 +83,7 @@ function drawCanvas(ideology, moderate, radical, socialist, capitalist, authorit
         if (conspiratorialist    > 30) {ctx.fillText(conspiratorialist + "%", 670, 717.5)}
         ctx.fillStyle=fg
         ctx.font="300 25px Montserrat"
-        ctx.fillText("conservavalues.github.io", 780, 40)
+        ctx.fillText("afunhumaninter.github.io/conservavalues", 780, 40)
         ctx.fillText(version, 780, 70)
         ctx.textAlign="center"
         ctx.fillText("Radicality Axis: " + document.getElementById("radicality-label").innerHTML, 400, 175)
