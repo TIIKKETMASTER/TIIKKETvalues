@@ -11,9 +11,9 @@ function drawCanvas(ideology, moderate, radical, socialist, capitalist, authorit
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
         c.width = 800;
-        c.height = 850;
+        c.height = 800;
         ctx.fillStyle = bg
-        ctx.fillRect(0,0,800,1000);
+        ctx.fillRect(0,0,800,800);
 
         var img = document.getElementById("img-moderate")
         ctx.drawImage(img, 20, 170, 100, 100);
