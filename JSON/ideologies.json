@@ -483,7 +483,7 @@
     {
         "name": "Distributism",
         "stats": {
-            "radi": 30,
+            "radi": 40,
             "econ": 55,
             "stte": 50,
             "natn": 50,
@@ -493,7 +493,7 @@
     {
         "name": "Anarcho-Distributism",
         "stats": {
-            "radi": 30,
+            "radi": 40,
             "econ": 55,
             "stte": 5,
             "natn": 50,
@@ -503,7 +503,7 @@
     {
         "name": "Libertarian Distributism",
         "stats": {
-            "radi": 30,
+            "radi": 40,
             "econ": 45,
             "stte": 30,
             "natn": 50,
