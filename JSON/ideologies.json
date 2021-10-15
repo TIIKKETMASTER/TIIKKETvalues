@@ -8,8 +8,7 @@
             "natn": 70,
             "conv": 75
         }        
-    }
-    ,
+    },
     {
         "name": "National Bolshevism",
         "stats": {
@@ -517,6 +516,26 @@
             "econ": 50,
             "stte": 55,
             "natn": 55,
+            "conv": 85
+        }        
+    },
+    {
+        "name": "Anarcho-Nazbol",
+        "stats": {
+            "radi": 5,
+            "econ": 95,
+            "stte": 5,
+            "natn": 90,
+            "conv": 85
+        }        
+    },
+    {
+        "name": "Christian Anarchism",
+        "stats": {
+            "radi": 50,
+            "econ": 50,
+            "stte": 5,
+            "natn": 60,
             "conv": 85
         }        
     }
