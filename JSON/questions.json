@@ -660,7 +660,7 @@
         }
     },
     {
-        "question": "9/11 was an inside job.",
+        "question": "9/11 and WWII were inside jobs.",
         "effect": {
             "radi": 0,
             "econ": 0,
@@ -710,7 +710,7 @@
         }
     },
     {
-        "question": "Modern Democratic politicians are involved in secret child-rape rings.",
+        "question": "Modern famous politicians and milti-billionaires are involved in secret child-rape rings.",
         "effect": {
             "radi": 0,
             "econ": 0,
@@ -1217,6 +1217,36 @@
             "stte": 10,
             "natn": 0,
             "conv": 0
+        }
+    },
+    {
+        "question": "Folk medicine, herbal medicine, and homeopathy are more reliable than conventional medicines.",
+        "effect": {
+            "radi": 0,
+            "econ": 0,
+            "stte": 0,
+            "natn": 0,
+            "conv": -10
+        }
+    },
+    {
+        "question": "Astrology and tarot are pure quackery.",
+        "effect": {
+            "radi": 0,
+            "econ": 0,
+            "stte": 0,
+            "natn": 0,
+            "conv": 10
+        }
+    },
+    {
+        "question": "The mainstream media is reliable as it is.",
+        "effect": {
+            "radi": 0,
+            "econ": 0,
+            "stte": 0,
+            "natn": 0,
+            "conv": 10
         }
     }
 ]
