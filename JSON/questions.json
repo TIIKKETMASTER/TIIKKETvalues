@@ -1248,5 +1248,15 @@
             "natn": 0,
             "conv": 10
         }
+    },
+    {
+        "question": "All objects with mass attract, even if the attraction is extremely small.",
+        "effect": {
+            "radi": 0,
+            "econ": 0,
+            "stte": 0,
+            "natn": 0,
+            "conv": 10
+        }
     }
 ]
