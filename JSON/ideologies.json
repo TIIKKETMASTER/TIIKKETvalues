@@ -32,11 +32,11 @@
     {
         "name": "Trumpism",
         "stats": {
-            "radi": 35,
+            "radi": 45,
             "econ": 35,
-            "stte": 70,
+            "stte": 75,
             "natn": 75,
-            "conv": 70
+            "conv": 65
         }        
     },
     {
