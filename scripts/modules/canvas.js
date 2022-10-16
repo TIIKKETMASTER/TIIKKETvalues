@@ -1,6 +1,6 @@
 export default drawCanvas
 function drawCanvas(ideology, moderate, radical, socialist, capitalist, authoritarian, libertarian, nationalist, globalist, conventionalist, conspiratorialist) {
-    var version = "Test Edition #3.0"
+    var version = "Test Edition #3.1"
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         var bg = "#141414"
         var fg = "#EEEEEE"
