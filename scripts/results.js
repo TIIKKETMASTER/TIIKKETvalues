@@ -78,8 +78,8 @@ function parse_ideology(ideologies){
         dist += Math.pow(Math.abs(ideologies[i].stats.radi - moderate), 2)
         dist += Math.pow(Math.abs(ideologies[i].stats.econ - socialist), 1.5)
         dist += Math.pow(Math.abs(ideologies[i].stats.stte - authoritarian), 1.75)
-        dist += Math.pow(Math.abs(ideologies[i].stats.natn - nationalist), 1.5)
-        dist += Math.pow(Math.abs(ideologies[i].stats.conv - conventionalist), 1.5)
+        dist += Math.pow(Math.abs(ideologies[i].stats.natn - nationalist), 1.75)
+        dist += Math.pow(Math.abs(ideologies[i].stats.conv - conventionalist), 1.25)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
